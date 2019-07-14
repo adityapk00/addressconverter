@@ -25,7 +25,7 @@ $("#convert_button").click( e => {
 
 $("#zcash_explorer").click( e => {
     let address = $("#zcash_address").text().trim();
-    if (address == "")
+    if (address == "" || address == "No Address")
         return;
 
     window.open("https://explorer.zcha.in/accounts/" + address, "_blank");
@@ -33,7 +33,7 @@ $("#zcash_explorer").click( e => {
 
 $("#ycash_explorer").click( e => {
     let address = $("#ycash_address").text().trim();
-    if (address == "")
+    if (address == "" || address == "No Address")
         return;
         
     window.open("https://yec.zcha.in/accounts/" + address, "_blank");
