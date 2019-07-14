@@ -23,6 +23,23 @@ $("#convert_button").click( e => {
     }
 });
 
+$("#zcash_explorer").click( e => {
+    let address = $("#zcash_address").text().trim();
+    if (address == "")
+        return;
+
+    window.open("https://explorer.zcha.in/accounts/" + address, "_blank");
+});
+
+$("#ycash_explorer").click( e => {
+    let address = $("#ycash_address").text().trim();
+    if (address == "")
+        return;
+        
+    window.open("https://yec.zcha.in/accounts/" + address, "_blank");
+});
+
+
 function doBase58(inp: string) {
     var zcash_prefix, ycash_prefix;
     try {
