@@ -11,7 +11,8 @@ const plugins = [
     }
   }),
   new HtmlWebpackPlugin({
-    title: 'Typescript Webpack Starter',
+    title: 'Zcash - Ycash Address converter',
+    description: 'Convert between Zcash and Ycash addresses',
     template: '!!ejs-loader!src/index.html'
   }),
   new webpack.LoaderOptionsPlugin({
